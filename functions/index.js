@@ -1,7 +1,7 @@
 // The Cloud Functions for Firebase SDK to create Cloud Functions and setup triggers.
 const functions = require('firebase-functions')
 
-const Author = require('./Author.js')
+const Author = require('./Author')
 
 // Take the text parameter passed to this HTTP endpoint and insert it into
 // Cloud Firestore under the path /authors/:documentId/original
