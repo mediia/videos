@@ -21,4 +21,3 @@ exports.test = functions.https.onRequest(async (req, res) => {
     message: 'yay!',
   })
 })
-

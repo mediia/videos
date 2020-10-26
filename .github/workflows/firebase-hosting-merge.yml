@@ -19,3 +19,6 @@ jobs:
           projectId: mediia-videos
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
+      - name: Deploy functions
+        run: 'cd functions && npm i && firebase deploy --token ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MEDIIA_VIDEOS }} --only functions --non-interactive'
+        
