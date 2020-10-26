@@ -11,6 +11,7 @@ admin.initializeApp()
 // Cloud Firestore under the path /authors/:documentId/original
 exports.addAuthor = functions.https.onRequest(async (req, res) => {
   const author = await Author.add(req.body.name)
+  console.log('author', author)
   // Send back a message that we've succesfully written the message
   res.json({
     result: 'success',
