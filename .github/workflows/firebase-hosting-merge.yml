@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install firebase CLI
-        run: sudo npm install firebase-tools
+        run: sudo npm install -g firebase-tools
       - name: Install NPM dependencies
         run: cd functions && npm i
       - name: Deploy Firebase functions
