@@ -119,8 +119,8 @@
 
     // Warn against nested then() or catch() statements
     "promise/no-nesting": 1,
-
+    
     // No pollution please
-    "semi": "never"
+    "semi": ["error","never"]
   }
 }
