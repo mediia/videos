@@ -1,7 +1,6 @@
 const admin = require('firebase-admin')
+admin.initializeApp()
 
-exports.add = (name) => {
-    admin.firestore()
-      .collection('authors')
-      .add({ name })
-  }
+exports.add = async (name) => admin.firestore()
+    .collection('authors')
+    .add({ name })
