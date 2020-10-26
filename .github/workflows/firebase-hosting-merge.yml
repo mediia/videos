@@ -18,4 +18,4 @@ jobs:
       - name: Install NPM dependencies
         run: cd functions && npm i
       - name: Deploy Firebase functions
-        run: firebase deploy --only functions --token ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MEDIIA_VIDEOS }}
+        run: firebase deploy --only functions --token ${{ secrets.FIREBASE_TOKEN }}
