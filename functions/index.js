@@ -15,6 +15,7 @@ exports.addAuthor = functions.https.onRequest(async (req, res) => {
       name: req.query.name
     });
   // Send back a message that we've succesfully written the message
-  res.json({result: `Author with ID: ${writeResult.id} added.`});
+  res.json({
+    result: `Author with ID: ${writeResult.id} added.`
+  });
 });
-
