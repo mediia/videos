@@ -13,3 +13,12 @@ exports.addAuthor = functions.https.onRequest(async (req, res) => {
     id: author.id,
   })
 })
+
+exports.test = functions.https.onRequest(async (req, res) => {
+  // Send back a message that we've succesfully written the message
+  res.json({
+    result: 'success',
+    message: 'yay!',
+  })
+})
+
