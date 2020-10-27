@@ -70,13 +70,14 @@
             'performance',
           ].filter(feature => typeof app[feature] === 'function');
           loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+          loadEl.textContent = app.database().get('authors')
         } catch (e) {
           console.error(e);
           loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
         }
       });
       
-      loadEl.textContent = app.database().get('authors')
+      
     </script>
   </body>
 </html>
